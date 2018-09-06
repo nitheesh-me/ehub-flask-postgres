@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=0pen+5ans:300,400,600' rel='stylesheet'>
+        <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet" >
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1 class="title">{% block title %}{% endblock %}</h1>
+            </div>
+        </header>
+        {% block content %}{% endblock %}
+    </body>
+</html>
